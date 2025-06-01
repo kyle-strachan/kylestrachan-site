@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Kyle Strachan</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:100,300,400,700"
+      type="text/css"
+      media="all"
+    />
     <style>
       * {
         margin: 0px;
         padding: 0px;
+        font-family: Inter, sans-serif;
       }
 
       body {
@@ -17,8 +24,27 @@
         padding: 40px;
       }
 
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 20px 0px;
+      }
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
       .container {
         max-width: 800px;
+        /* overflow: hidden; */
         margin: 0 auto;
       }
 
@@ -44,18 +70,18 @@
         top: -10px;
       }
       .profile-details {
-        padding: 100px;
+        padding: 35px;
       }
 
       .project-blocks {
-        display: flex;
+        /* display: flex; */
         gap: 20px;
       }
 
       .project {
         padding: 30px;
         background-color: white;
-        width: 20%;
+        width: 250px;
       }
 
       .timeline-block {
@@ -63,6 +89,7 @@
         border-left: 5px solid red;
         max-width: 700px;
       }
+
       .timeline-end-block {
         display: flex;
         border-left: 5px solid red;
@@ -70,6 +97,10 @@
       }
       .timeline-future {
         border-left: 5px dashed red;
+      }
+
+      .timeline-tick > h4 {
+        margin: 0px;
       }
 
       p.timeline-item {
@@ -115,9 +146,30 @@
         </div>
         <div class="profile-details">
           <div>Kyle Strachan</div>
-          <div>Location: Kelowna, BC Canada</div>
+          <div>Kelowna, BC Canada</div>
+          <div>
+            GitHub
+            <a href="https://github.com/kyle-strachan" target="_blank"
+              >kyle-strachan</a
+            >
+          </div>
+          <div>
+            LinkedIn
+            <a href="https://www.linkedin.com/in/kyle-strachan/" target="_blank"
+              >kyle-strachan</a
+            >
+          </div>
         </div>
       </div>
+      <div>
+        <h2>Projects</h2>
+        <div class="project-blocks">
+          <a href="./portfolio/calendar/calendar.html" target="_blank"
+            ><div class="project">Project 1 - Calendar</div></a
+          >
+        </div>
+      </div>
+
       <p>
         Experienced hospitality revenue director with a proven record of RevPAR
         growth, now forecasting a third-consecutive record revenue year. I am
@@ -139,12 +191,6 @@
         <li>Strong analytical and problem solving skills</li>
       </ul>
 
-      <div class="project-blocks">
-        <div class="project">Project 1</div>
-        <div class="project">Project 2</div>
-        <div class="project">Project 3</div>
-      </div>
-
       <div class="timeline-block timeline-future">
         <div class="timeline-tick">
           <h4>Current Progress</h4>
@@ -160,20 +206,14 @@
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
-          <h4>Current Progress</h4>
-          This is some content in the div. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
-          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
-          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
-          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
-          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
-          tenetur?
+          <h4>Launched kylestrachan.com</h4>
+          Registered domain and configured DNS on static site.
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>Mongoose and MongoDB</h4>
+          First full-stack application
         </div>
       </div>
       <div class="timeline-block">
@@ -209,6 +249,10 @@
           optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
           tenetur?
         </div>
+      </div>
+      <div class="history">
+        <h2>Employment History</h2>
+        <h3>Hotel Arts Group, Director of Revenue (Remote), 2015 - Current</h3>
       </div>
     </div>
   </body>
