@@ -1,0 +1,484 @@
+:root {
+    --scheme-grey: #F5F5F5;
+    --scheme-grey-hover: #dbdbdb;
+    --scheme-panel: #ffffff;
+    --scheme-panel-border: #E9E9E9;
+    --scheme-primary: #d43c00;
+    --scheme-primary-bg: #d6edff;
+    --scheme-primary-hover:rgb(255, 60, 0);
+    --scheme-box-shadow: rgba(116, 116, 116, 0.2);
+    --default-color: #553634;
+    --header-height: 50px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Standard font definitions */
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--default-color);
+    margin: 0;
+}
+h1 {
+    font-size: 1.3rem;
+    color: white;
+}
+h2 {
+    font-size: 1.2rem;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 1.0rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 0.9rem;
+    margin: 0px 0px 5px 0px;
+}
+a {
+    color: var(--default-color);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--default-color);
+}
+
+body {
+    width: 100%;
+}
+
+/* Styles for sticky header */
+header {
+    width: 100%;
+    min-width: 770px;
+    height: var(--header-height);
+    padding: 10px;
+    background: linear-gradient(
+        to right,
+        #a30000,
+    var(--scheme-primary)
+        );
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.branding {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 10px;
+}
+.user {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.user img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -3px;
+}
+
+/* Section containers */
+.container-body {
+    /* Contains all sections except the header */
+    display: flex;
+}
+
+/* Define all sidebar elements */
+.sidebar {
+    max-width: 170px;
+    min-width: 170px;
+    padding: 10px;
+    background-color: var(--scheme-grey);
+}
+@media screen and (max-width: 950px) {
+    .sidebar {
+        display: none;
+    }
+}
+.sidebar-content {
+    position: fixed;
+    width: 150px;
+    top: var(--header-height);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 5px;
+    line-height: 1.5rem;
+    margin: 0px;
+}
+.sidebar ul a {
+    font-size: 0.9rem;
+    vertical-align: 4px;
+}
+.sidebar ul a:hover {
+    font-weight: bold;
+}
+.sidebar li::before {
+    content: url('../icons/icon-calendar-20.svg');
+    margin-right: 5px;
+}
+.sidebar-content > div {
+    padding: 10px 8px;
+    margin-bottom: 10px;
+    background-color: var(--scheme-panel);
+    border: 1px solid var(--scheme-panel-border);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px var(--scheme-box-shadow);
+    font-size: 0.85rem;
+}
+.sidebar .filters div {
+    margin-bottom: 5px;
+}
+fieldset {
+    border: 0px solid var(--scheme-primary);
+    padding: 5px;
+}
+fieldset label {
+    margin-left: 5px;
+}
+.aside-filters input {
+    margin: 0px;
+}
+
+/* Main pane containers */
+.container-main {
+    width: 100%;
+    position: relative;
+}
+.container-main-fixed {
+    position: sticky;
+    top: var(--header-height);
+    width: 100%;
+    min-width: 770px;
+    padding: 5px 5px 0px 5px;
+    background-color: var(--scheme-grey);
+}
+.container-main-scrollable {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: var(--scheme-grey);
+    min-width: 770px;
+}
+
+/* Navigation */
+.nav {
+    display: block;
+    background-color: var(--scheme-grey);
+    width: auto;
+    margin: 0px;
+    padding: 0px 10px;
+}
+.nav ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: start;
+}
+.nav li {
+    display: block;
+}
+.nav li a {
+    display: block;
+    padding: 5px 5px 8px 5px;
+}
+.nav li:hover {
+    border-bottom: 3px solid var(--scheme-primary);
+}
+.nav li.nav-active {
+    font-weight: bold;
+    border-bottom: 3px solid var(--scheme-primary);
+}
+
+/* Toolbar styling */
+.container-toolbar {
+    height: 50px;
+    padding: 5px;
+}
+.toolbar {
+    background-color: var(--scheme-panel);
+    border: 1px solid var(--scheme-panel-border);
+    border-radius: 5px;
+    height: 40px;
+    box-shadow: 0px 5px 5px var(--scheme-box-shadow);
+    display: flex;
+    align-items: center;
+    min-width: 770px;
+}
+.toolbar-btn-container {
+    display: flex;
+    margin: 5px 5px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 5px;
+}
+.toolbar-btn-container p {
+    font-size: 0.9rem;
+}
+.toolbar-btn-container.btn-new {
+    background-color: var(--scheme-primary);
+}
+.toolbar-btn-container.btn-new p {
+    color:white;
+}
+.toolbar-btn-container:hover {
+    background-color: var(--scheme-grey-hover);
+}
+.toolbar-btn-container.btn-new:hover {
+    background-color: var(--scheme-primary-hover);
+}
+
+/* Calendar headers */
+.calendar-header-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    gap: 5px;
+    padding: 15px;
+    justify-items: center;
+}
+.calendar-header-grid > div {
+    font-size: 0.85rem;
+    color: lightslategray;
+}
+
+/* Calendar styles */
+.calendar {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--scheme-panel);
+    border: 1px solid var(--scheme-panel-border);
+    box-shadow: 0px 5px 5px var(--scheme-box-shadow);
+    min-width: 770px;
+}
+.calendar-month {
+    justify-items: center;
+    margin: 5px 0px;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    /* grid-template-rows: 1fc 1fc; */
+    gap: 5px;
+    padding: 10px;
+}
+.calendar-tile {
+    background-color: var(--scheme-panel);
+    border: 1px solid var(--scheme-panel-border);
+    border-radius: 3px;
+    min-height: 150px;
+}
+.calendar-tile:hover {
+    background-color: #fceae2;
+    border-color: #d42000;
+}
+.calendar-tile.featured {
+    background-color: rgb(255, 233, 237);
+}
+.calendar-day {
+    /* The number of the day */
+    display: flex;
+    justify-content: end;
+    margin: 5px 5px 0px 5px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Activity styles are the individual events on the calendar tiles */
+.calendar-activity {
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+.calendar-activity:hover {
+    border: 1px dashed black;
+}
+.calendar-activity-sport:hover {
+    background-color: rgb(197, 243, 203);
+}
+.calendar-activity-art:hover {
+    background-color: rgb(243, 197, 197);
+}
+.calendar-activity-cultural:hover {
+    background-color: rgb(202, 197, 243);
+}
+.calendar-activity-science:hover {
+    background-color: rgb(197, 238, 243);
+}
+.calendar-activity-educational:hover {
+    background-color: rgb(243, 238, 197);
+}
+.calendar-activity-music:hover {
+    background-color: rgb(241, 197, 243);
+}
+.calendar-activity-label {
+    /* Controls text truncation point */
+    width: 85%;
+}
+.calendar-activity-label p {
+    margin: 0 0 0 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2rem;
+}
+#calendar-activity-label-highlight {
+    font-weight: bold;
+}
+.calendar-activity-grid {
+    gap: 5px;
+    padding: 5px;
+}
+@media screen and (max-width: 1200px) {
+    .calendar-activity {
+        justify-content: center;
+    }
+    /* Hide labels in mobile */
+    .calendar-activity-label {
+        display: none;
+    }
+    .calendar-activity-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+}
+.calendar-activity-icon {
+    /* Maintains width in case an icon doesn't load */
+    min-width: 24px;
+}
+
+/* Define activity icons */
+.calendar-activity-sport .calendar-activity-icon {
+    content: url('../icons/icon-sport.svg');
+}
+.calendar-activity-music .calendar-activity-icon {
+    content: url('../icons/icon-music.svg');
+}
+.calendar-activity-science .calendar-activity-icon {
+    content: url('../icons/icon-science.svg');
+}
+.calendar-activity-art .calendar-activity-icon {
+    content: url('../icons/icon-art.svg');
+}
+.calendar-activity-cultural .calendar-activity-icon {
+    content: url('../icons/icon-cultural2.png');
+}
+.calendar-activity-educational .calendar-activity-icon {
+    content: url('../icons/icon-education.svg');
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--scheme-primary);
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    min-width: 770px;
+}
+footer p {
+    color: white;
+    font-size: 0.8rem;
+}
+.footer-detail {
+    text-align: center;
+}
+.footer-coder {
+    text-align: center;
+    font-style: italic;
+    color: #c2e5ff;
+    line-height: 200%;
+}
+.target-offset {
+    scroll-margin-top: 300px;
+}
+
+
+/* Overlay */
+.new-event-overlay {
+    /* Must appear on top of everything */
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: var(--scheme-grey);
+    padding: 20px;
+    border: 2px solid var(--scheme-primary);
+    border-radius: 5px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 9998;
+    pointer-events: auto;
+}
+.new-event-overlay > h2 {
+    margin: 10px 0px 20px 0px;
+}
+.overlay input {
+    margin: 5px 0px 20px 0px;
+    width: 100%;
+}
+.overlay select {
+    margin: 5px 0px 20px 0px;
+    width: 100%;
+}
+.overlay .button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.overlay button {
+    all: unset;
+    color: white;
+    background-color: var(--scheme-primary);
+    border: 1px solid white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#overlay-error-message {
+    color: var(--scheme-primary);
+    padding-bottom: 20px;
+    overflow-wrap: break-word;
+}
+.hidden {
+    display: none;
+}

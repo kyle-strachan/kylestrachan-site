@@ -1,0 +1,278 @@
+[
+  {
+    "title": "Tech Innovations Summit",
+    "date": "172",
+    "description": "A fun and educational event open to all ages.",
+    "category": "science"
+  },
+  {
+    "title": "Global Jazz Fest",
+    "date": "125",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "music"
+  },
+  {
+    "title": "Coding for Beginners",
+    "date": "6",
+    "description": "A fun and educational event open to all ages.",
+    "category": "educational"
+  },
+  {
+    "title": "Cultural Tapestry Parade",
+    "date": "180",
+    "description": "A fun and educational event open to all ages.",
+    "category": "cultural"
+  },
+  {
+    "title": "Earth Awareness Workshop",
+    "date": "218",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "educational"
+  },
+  {
+    "title": "Mountain Biking Championship",
+    "date": "109",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "sport"
+  },
+  {
+    "title": "Creative Writing Masterclass",
+    "date": "20",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "educational"
+  },
+  {
+    "title": "World Cultures Fair",
+    "date": "38",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "cultural"
+  },
+  {
+    "title": "Outdoor Murals Exhibition",
+    "date": "7",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "art"
+  },
+  {
+    "title": "Global Energy Show - Day 1",
+    "date": "40",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "science"
+  },
+  {
+    "title": "Global Energy Show - Day 2",
+    "date": "41",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "science"
+  },
+  {
+    "title": "Global Energy Show - Day 3",
+    "date": "42",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "science"
+  },
+  {
+    "title": "Coding for Beginners",
+    "date": "8",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "educational"
+  },
+  {
+    "title": "Renewable Energy Expo",
+    "date": "257",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "science"
+  },
+  {
+    "title": "Classical Melodies Concert",
+    "date": "130",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "music"
+  },
+  {
+    "title": "Lantern Festival",
+    "date": "87",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "cultural"
+  },
+  {
+    "title": "Harmony Choir Recital",
+    "date": "94",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "music"
+  },
+  {
+    "title": "Coding for Beginners",
+    "date": "13",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "educational"
+  },
+  {
+    "title": "Coding for Beginners",
+    "date": "15",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "educational"
+  },
+  {
+    "title": "Watercolors in Bloom",
+    "date": "186",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "art"
+  },
+  {
+    "title": "Robotics Innovation Conference",
+    "date": "11",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "science"
+  },
+  {
+    "title": "Canoe Racing Challenge Day 1",
+    "date": "11",
+    "description": "A fun and educational event open to all ages.",
+    "category": "sport"
+  },
+  {
+    "title": "Space Exploration Symposium",
+    "date": "31",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "science"
+  },
+  {
+    "title": "Canoe Racing Challenge Day 2",
+    "date": "13",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "sport"
+  },
+  {
+    "title": "Indigenous Heritage Day",
+    "date": "49",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "cultural"
+  },
+  {
+    "title": "Folk Rhythms Festival",
+    "date": "45",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "music"
+  },
+  {
+    "title": "Future Skills Workshop",
+    "date": "96",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "educational"
+  },
+  {
+    "title": "Symphony Under the Stars",
+    "date": "13",
+    "description": "A fun and educational event open to all ages.",
+    "category": "music"
+  },
+  {
+    "title": "Taste of World Cuisine Festival",
+    "date": "142",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "cultural"
+  },
+  {
+    "title": "Taste of World Cuisine Festival",
+    "date": "69",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "cultural"
+  },
+  {
+    "title": "Mountain Biking Championship",
+    "date": "105",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "sport"
+  },
+  {
+    "title": "Tech Innovations Summit",
+    "date": "37",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "science"
+  },
+  {
+    "title": "National Tennis Tournament",
+    "date": "26",
+    "description": "Learn, create, and collaborate with the community.",
+    "category": "sport"
+  },
+  {
+    "title": "Abstract Art Unveiled",
+    "date": "65",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "art"
+  },
+  {
+    "title": "Coding for Beginners Bootcamp",
+    "date": "24",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "educational"
+  },
+  {
+    "title": "Creative Writing Masterclass",
+    "date": "48",
+    "description": "A fun and educational event open to all ages.",
+    "category": "educational"
+  },
+  {
+    "title": "Abstract Landscapes Showcase",
+    "date": "80",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "art"
+  },
+  {
+    "title": "Impressionist Wonders Exhibit",
+    "date": "209",
+    "description": "A fun and educational event open to all ages.",
+    "category": "art"
+  },
+  {
+    "title": "Youth Leadership Seminar",
+    "date": "117",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "educational"
+  },
+  {
+    "title": "Renewable Energy Expo",
+    "date": "28",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "science"
+  },
+  {
+    "title": "Coding for Beginners Bootcamp",
+    "date": "31",
+    "description": "An inspiring session showcasing the latest trends.",
+    "category": "educational"
+  },
+  {
+    "title": "Biodiversity Conservation Summit",
+    "date": "104",
+    "description": "A fun and educational event open to all ages.",
+    "category": "science"
+  },
+  {
+    "title": "Rock Legends Tribute Concert",
+    "date": "28",
+    "description": "An immersive experience with hands-on activities.",
+    "category": "music"
+  },
+  {
+    "title": "Classical Melodies Concert",
+    "date": "38",
+    "description": "A fun and educational event open to all ages.",
+    "category": "music"
+  },
+  {
+    "title": "Public Speaking Workshop",
+    "date": "52",
+    "description": "Join experts for an interactive discussion and demo.",
+    "category": "educational"
+  },
+  {
+    "title": "Early Childhood Education Conference",
+    "date": "333",
+    "description": "Join experts for a fun look at raising children.",
+    "category": "educational"
+  }
+]

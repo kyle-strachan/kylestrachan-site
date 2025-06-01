@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Calendar (Main change)</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./icons/icon-calendar-20.svg" type="image/x-icon" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <img src="./images/brand-logo-40.png" alt="Calendar Logo" />
+        <h1>Events Calendar</h1>
+      </div>
+      <div class="user">
+        <img src="./images/user-picture.jpg" alt="Profile picture" />
+      </div>
+    </header>
+
+    <!-- container-body holds aside plus main calendar viewing pane with flex display -->
+    <div class="container-body">
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <h3>Jump To</h3>
+          <ul>
+            <!-- Future nice to have: add dynamic labels, hardcoded for now -->
+            <li><a href="#grid-month-1">May 2025</a></li>
+            <li><a href="#grid-month-2">June 2025</a></li>
+          </ul>
+          <h3>Upcoming Highlights</h3>
+          <div class="highlight">
+            <h4>Coding for Beginners</h4>
+            Get started on May&nbsp;24
+          </div>
+
+          <h3>Filters</h3>
+          <div class="filters">
+            <form action="#">
+              <!-- Filters currently non-functional, for future database fetching use -->
+              <fieldset class="aside-filters" disabled>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-science"
+                    value="science"
+                  /><label for="filter-science">Science</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-sport"
+                    value="sport"
+                  /><label for="filter-sport">Sport</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-educational"
+                    value="educational"
+                  /><label for="filter-educational">Educational</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-art"
+                    value="art"
+                  /><label for="filter-art">Art</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-cultural"
+                    value="cultural"
+                  /><label for="filter-cultural">Cultural</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filter-event-type"
+                    id="filter-music"
+                    value="music"
+                  /><label for="filter-music">Music</label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </aside>
+
+      <div class="container-main">
+        <div class="container-main-fixed">
+          <nav>
+            <div class="nav">
+              <!-- Tabs remain inactive -->
+              <ul>
+                <li class="nav-active"><a href="#">Calendar</a></li>
+                <li><a href="#">Task List</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-toolbar">
+            <!-- JavaScipt functionality  has been added to New Event, Month and Day buttons -->
+            <div class="toolbar">
+              <a
+                id="btn-add-new-calendar-event"
+                href="#"
+                class="toolbar-btn-container btn-new"
+                title="Add a new event to the calendar."
+              >
+                <img
+                  src="./icons/icon-add.svg"
+                  style="filter: invert(100%)"
+                  alt="Create New Event"
+                />
+                <p>New Event</p>
+              </a>
+              <a
+                id="btn-display-by-month"
+                href="#"
+                class="toolbar-btn-container"
+                title="Toggle to sliding month view."
+              >
+                <img
+                  src="./icons/icon-calendar-20.svg"
+                  alt="Icon showing month"
+                />
+                <p>Month</p>
+              </a>
+              <a
+                id="btn-display-by-day"
+                href="#"
+                class="toolbar-btn-container"
+                title="Toggle to daily view."
+              >
+                <img
+                  src="./icons/icon-calendar-week-20.svg"
+                  alt="Icon showing day"
+                />
+                <p>Day</p>
+              </a>
+              <a
+                href="#"
+                class="toolbar-btn-container"
+                title="Choose what types of events you'd like to view."
+              >
+                <img src="./icons/icon-filter-20.svg" alt="Filter icon" />
+                <p>Filter</p>
+              </a>
+              <a
+                href="#"
+                class="toolbar-btn-container"
+                title="Share this calendar by email."
+              >
+                <img src="./icons/icon-share-20.svg" alt="Share icon" />
+                <p>Share</p>
+              </a>
+              <a
+                href="#"
+                class="toolbar-btn-container"
+                title="Print this calendar."
+              >
+                <img src="./icons/icon-print-20.svg" alt="Print icon" />
+                <p>Print</p>
+              </a>
+            </div>
+          </div>
+          <div id="calendar-headers" class="calendar-header-grid">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+          </div>
+        </div>
+        <div class="container-main-scrollable">
+          <div id="calendar" class="calendar">
+            <!-- All previous hard-coded calendar content now removed, now dynamically loaded
+            via JavaScript from JSON -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay, hidden by default -->
+    <div id="event-overlay" class="overlay hidden">
+      <div class="new-event-overlay">
+        <h2>Create New Event</h2>
+
+        <form id="event-form">
+          <div>
+            <label for="eventTitle">Event Name:</label>
+            <input
+              type="text"
+              id="input-event-title"
+              name="eventTitle"
+              required
+            />
+            <div><label for="eventType">Type of Event:</label></div>
+            <div>
+              <select id="input-event-type" name="eventType">
+                <option value="art">Art</option>
+                <option value="cultural">Cultural</option>
+                <option value="educational">Educational</option>
+                <option value="music">Music</option>
+                <option value="science">Science</option>
+                <option value="sport">Sport</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="inputLabel">
+              <label for="eventDate">Event Date:</label>
+            </div>
+            <div class="inputField">
+              <input
+                type="date"
+                id="input-event-date"
+                name="input-event-date"
+                required
+              />
+            </div>
+          </div>
+          <p id="overlay-error-message"></p>
+          <div class="button-group">
+            <button id="btn-add-event-from-overlay" type="submit">
+              Add Event
+            </button>
+            <button id="btn-close-new-event">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-detail">
+        <p>Events Calendar</p>
+        <div class="footer-coder"><p>Site coded by Kyle Strachan</p></div>
+      </div>
+    </footer>
+  </body>
+</html>
