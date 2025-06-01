@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Kyle Strachan</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background: #f4f4f4;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .profile-cols {
+        display: flex;
+        align-items: center;
+      }
+
+      .profile-picture {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid white;
+        margin: 35px 10px 35px 0px;
+        overflow: hidden;
+        position: relative;
+      }
+      .profile-picture img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -10px;
+      }
+      .profile-details {
+        padding: 100px;
+      }
+
+      .project-blocks {
+        display: flex;
+        gap: 20px;
+      }
+
+      .project {
+        padding: 30px;
+        background-color: white;
+        width: 20%;
+      }
+
+      .timeline-block {
+        display: flex;
+        border-left: 5px solid red;
+        max-width: 700px;
+      }
+      .timeline-end-block {
+        display: flex;
+        border-left: 5px solid red;
+        max-width: 700px;
+      }
+      .timeline-future {
+        border-left: 5px dashed red;
+      }
+
+      p.timeline-item {
+        margin: 0;
+        margin-right: 10px;
+        padding: 0;
+      }
+
+      .timeline-tick {
+        position: relative;
+        padding: 30px 0 30px 25px;
+        min-height: 40px;
+      }
+
+      .timeline-end {
+        position: relative;
+        padding: 30px 0 30px 25px;
+        min-height: 40px;
+      }
+
+      .timeline-tick::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 38px;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: red;
+      }
+
+      .timeline-heading {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>About Me</h1>
+      <div class="profile-cols">
+        <div class="profile-picture">
+          <img src="./images/kyle-strachan.jpg" alt="Kyle Strachan" />
+        </div>
+        <div class="profile-details">
+          <div>Kyle Strachan</div>
+          <div>Location: Kelowna, BC Canada</div>
+        </div>
+      </div>
+      <p>
+        Experienced hospitality revenue director with a proven record of RevPAR
+        growth, now forecasting a third-consecutive record revenue year. I am
+        currently enrolled in Circuit Stream's University of British
+        Columbia-accredited Software Development Bootcamp, learning the MERN
+        stack, with the aim of writing software to simplify hospitality
+        operations in an increasingly technical industry. I am data driven, my
+        company's Excel and Oracle OPERA superuser, Simphony POS administrator,
+        app builder.
+      </p>
+      <h3>Core Skills</h3>
+      <ul>
+        <li>Junior software developer using MERN stack</li>
+        <li>
+          10 years of hotel revenue management and hospitality leadership
+          experience across downtown core and resort properties; 7 of which in a
+          multi-property environment.
+        </li>
+        <li>Strong analytical and problem solving skills</li>
+      </ul>
+
+      <div class="project-blocks">
+        <div class="project">Project 1</div>
+        <div class="project">Project 2</div>
+        <div class="project">Project 3</div>
+      </div>
+
+      <div class="timeline-block timeline-future">
+        <div class="timeline-tick">
+          <h4>Current Progress</h4>
+          This is some content in the div. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
+          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
+          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
+          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
+          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
+          tenetur?
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>Current Progress</h4>
+          This is some content in the div. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
+          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
+          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
+          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
+          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
+          tenetur?
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>Mongoose and MongoDB</h4>
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>Node.js</h4>
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>JavaScript</h4>
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>CSS</h4>
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>HTML</h4>
+          <p class="timeline-descripton">March 2025</p>
+        </div>
+      </div>
+      <div class="timeline-end-block">
+        <div class="timeline-end">
+          <h4>Current Progress</h4>
+          This is some content in the div. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
+          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
+          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
+          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
+          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
+          tenetur?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
