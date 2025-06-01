@@ -10,132 +10,7 @@
       type="text/css"
       media="all"
     />
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        font-family: Inter, sans-serif;
-      }
-
-      body {
-        background: #f4f4f4;
-        font-family: sans-serif;
-        margin: 0;
-        padding: 40px;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 20px 0px;
-      }
-
-      p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      .container {
-        max-width: 800px;
-        /* overflow: hidden; */
-        margin: 0 auto;
-      }
-
-      .profile-cols {
-        display: flex;
-        align-items: center;
-      }
-
-      .profile-picture {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-color: white;
-        border: 1px solid white;
-        margin: 35px 10px 35px 0px;
-        overflow: hidden;
-        position: relative;
-      }
-      .profile-picture img {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: -10px;
-      }
-      .profile-details {
-        padding: 35px;
-      }
-
-      .project-blocks {
-        /* display: flex; */
-        gap: 20px;
-      }
-
-      .project {
-        padding: 30px;
-        background-color: white;
-        width: 250px;
-      }
-
-      .timeline-block {
-        display: flex;
-        border-left: 5px solid red;
-        max-width: 700px;
-      }
-
-      .timeline-end-block {
-        display: flex;
-        border-left: 5px solid red;
-        max-width: 700px;
-      }
-      .timeline-future {
-        border-left: 5px dashed red;
-      }
-
-      .timeline-tick > h4 {
-        margin: 0px;
-      }
-
-      p.timeline-item {
-        margin: 0;
-        margin-right: 10px;
-        padding: 0;
-      }
-
-      .timeline-tick {
-        position: relative;
-        padding: 30px 0 30px 25px;
-        min-height: 40px;
-      }
-
-      .timeline-end {
-        position: relative;
-        padding: 30px 0 30px 25px;
-        min-height: 40px;
-      }
-
-      .timeline-tick::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 38px;
-        transform: translateY(-50%);
-        width: 5px;
-        height: 5px;
-        background-color: red;
-      }
-
-      .timeline-heading {
-        font-weight: 700;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -145,22 +20,43 @@
           <img src="./images/kyle-strachan.jpg" alt="Kyle Strachan" />
         </div>
         <div class="profile-details">
-          <div>Kyle Strachan</div>
+          <div><b>Kyle Strachan</b></div>
           <div>Kelowna, BC Canada</div>
           <div>
             GitHub
             <a href="https://github.com/kyle-strachan" target="_blank"
-              >kyle-strachan</a
+              ><b>kyle-strachan</b></a
             >
           </div>
           <div>
             LinkedIn
             <a href="https://www.linkedin.com/in/kyle-strachan/" target="_blank"
-              >kyle-strachan</a
+              ><b>kyle-strachan</b></a
             >
           </div>
         </div>
       </div>
+      <p>
+        Experienced hospitality revenue director with a proven record of RevPAR
+        growth, now forecasting a third-consecutive record revenue year. I am
+        currently enrolled in Circuit Stream's University of British
+        Columbia-accredited Software Development Bootcamp, learning the MERN
+        stack, with the aim of writing software to simplify hospitality
+        operations in an increasingly technical industry. I am data driven and
+        my company's Excel and Oracle OPERA superuser.
+      </p>
+      <h3>Core Skills</h3>
+      <ul>
+        <li>Junior software developer using MERN stack.</li>
+        <li>
+          10 years of hotel revenue management and hospitality leadership
+          experience across downtown core and resort properties; 7 of which in a
+          multi-property environment.
+        </li>
+        <li>Strong analytical and problem solving skills</li>
+      </ul>
+    </div>
+    <div class="container">
       <div>
         <h2>Projects</h2>
         <div class="project-blocks">
@@ -169,90 +65,149 @@
           >
         </div>
       </div>
-
-      <p>
-        Experienced hospitality revenue director with a proven record of RevPAR
-        growth, now forecasting a third-consecutive record revenue year. I am
-        currently enrolled in Circuit Stream's University of British
-        Columbia-accredited Software Development Bootcamp, learning the MERN
-        stack, with the aim of writing software to simplify hospitality
-        operations in an increasingly technical industry. I am data driven, my
-        company's Excel and Oracle OPERA superuser, Simphony POS administrator,
-        app builder.
-      </p>
-      <h3>Core Skills</h3>
-      <ul>
-        <li>Junior software developer using MERN stack</li>
-        <li>
-          10 years of hotel revenue management and hospitality leadership
-          experience across downtown core and resort properties; 7 of which in a
-          multi-property environment.
-        </li>
-        <li>Strong analytical and problem solving skills</li>
-      </ul>
-
+    </div>
+    <div class="container">
+      <h2>Learning Development</h2>
       <div class="timeline-block timeline-future">
-        <div class="timeline-tick">
-          <h4>Current Progress</h4>
-          This is some content in the div. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
-          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
-          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
-          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
-          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
-          tenetur?
+        <div class="timeline-future-tick">
+          <h4>Goal 1: Graduate Software Development Bootcamp</h4>
+          <p class="timeline-date">December 2025</p>
+          Will detail out future projects as I know more.
+        </div>
+      </div>
+      <div class="timeline-block timeline-future">
+        <div class="timeline-future-tick">
+          <h4>Goal 2: TBD</h4>
+          <p class="timeline-date">TBD</p>
+          Will detail out future projects as I know more.
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>Launched kylestrachan.com</h4>
+          <p class="timeline-date">May 31, 2025</p>
           Registered domain and configured DNS on static site.
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>Mongoose and MongoDB</h4>
+          <p class="timeline-date">May 2025</p>
           First full-stack application
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>Node.js</h4>
+          <p class="timeline-date">May 2025</p>
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>JavaScript</h4>
+          <p class="timeline-date">April 2025</p>
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>CSS</h4>
+          <p class="timeline-date">March 2025</p>
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-tick">
           <h4>HTML</h4>
-          <p class="timeline-descripton">March 2025</p>
+          <p class="timeline-date">March 2025</p>
         </div>
       </div>
-      <div class="timeline-end-block">
-        <div class="timeline-end">
-          <h4>Current Progress</h4>
-          This is some content in the div. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Ad laudantium, mollitia deleniti quis
-          dolore tempore est asperiores dolorem, quod nostrum, quisquam porro
-          excepturi soluta labore molestiae eos sequi veniam iure? Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Pariatur saepe nemo
-          error ea dolor consequatur, omnis nulla laborum impedit suscipit minus
-          optio molestiae voluptatem! Aperiam voluptas repellendus fugiat odit
-          tenetur?
+      <div class="timeline-block">
+        <div class="timeline-tick">
+          <h4>Started Software Development Bootcamp</h4>
+          <p class="timeline-date">March 2025</p>
+          <p class="description">
+            Circuit Stream, University of British Columbia-accredited
+          </p>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="history">
         <h2>Employment History</h2>
         <h3>Hotel Arts Group, Director of Revenue (Remote), 2015 - Current</h3>
+        <ul>
+          <li>
+            Overseeing Rooms division revenue budgets, forecasts, reporting,
+            electronic distribution network, strategic development.
+          </li>
+          <li>
+            Position was on-site in Calgary, AB 2015-2018, I have worked
+            remotely from Kelowna, BC since May 2019.
+          </li>
+          <li>
+            Responsible for managing financial forecasts, billing, reporting,
+            and analytics for the Rooms division in the hotel group. Role
+            requires strong attention to detail and relies heavily on data
+            manipulation and problem solving to ascertain facts.
+          </li>
+          <li>
+            I am responsible for negotiating third party vendors contracts and
+            for finding common ground when negotiating group contracts and am a
+            signing authority for both. I have also been the lead in managing
+            contract renegotiations during COVID-19 to find workable solutions
+            for all parties with respect to the fact that force majeure and
+            other cancellation clauses may technically not be in effect and am
+            relied upon to make my best judgement on each individual case.
+          </li>
+          <li>
+            I am responsible for finding and rectifying account and ledger
+            imbalances and tracing payments through multiple systems to ensure
+            the deposit and guest ledgers are up to date. As the manager for the
+            Reservations team, I oversee all inbound calls and assist where
+            necessary utilizing my previous experience as call centre supervisor
+            for escalated calls. I support Accounts Payable and Receivable by
+            maintaining their report suite and working with them to troubleshoot
+            discrepancies.
+          </li>
+          <li>
+            Additionally, covered a maternity leave role as
+            <b>Interim Director of Sales and Marketing</b> overseeing expenses
+            budget, transition to an external marketing agency and overhauling
+            WordPress sites.
+          </li>
+        </ul>
+
+        <h3>
+          Ramada Plaza Downtown Calgary, Reservations & Revenue Manager, 2015
+        </h3>
+        <ul>
+          <li>
+            Responsible for managing all rates and billing in the property
+            management system. This role was a relatively short period as the
+            opportunity arose to work for Hotel Arts Group, for whom I still
+            work with today.
+          </li>
+        </ul>
+        <h3>
+          The Fairmont Château Lake Louise, Assistant Reservations Manager, 2014
+          - 2015
+        </h3>
+        <ul>
+          <li>
+            Managed reconciliation of accounts and commissions and assisted with
+            management of in-house reservations team and call centre.
+          </li>
+        </ul>
+        <h3>
+          Panorama Mountain Village, Guest Services & Call Centre Supervisor,
+          2009 - 2014
+        </h3>
+        <ul>
+          <li>
+            Various seasonal roles in guest services and latterly as Call Centre
+            Supervisor (1 year) handling all inbound reservations and activity
+            bookings and managing escalated calls.
+          </li>
+        </ul>
       </div>
     </div>
   </body>
