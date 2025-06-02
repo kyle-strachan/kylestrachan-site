@@ -11,6 +11,12 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    padding: 30px 20px;
+  }
+}
+
 h2 {
   margin-bottom: 20px;
 }
@@ -45,9 +51,21 @@ ul {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+
 .profile-cols {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-cols {
+    display: block;
+  }
 }
 
 .profile-picture {
@@ -69,6 +87,11 @@ ul {
 .profile-details {
   padding: 35px;
 }
+@media screen and (max-width: 600px ){
+  .profile-details {
+    padding: 0px;
+  }
+}
 
 .project-blocks {
   /* display: flex; */
@@ -78,7 +101,7 @@ ul {
 .project {
   padding: 30px;
   background-color: white;
-  width: 250px;
+  width: 200px;
   border: 1px dashed red;
   border-radius: 15px;
   background-color: rgb(255, 227, 227);
